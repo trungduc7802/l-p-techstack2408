@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORM ĐĂNG KÝ</title>
+</head>
+<body>
+    <h1>FORM ĐĂNG KÝ</h1>
+    <form action="submit" method="post">
+        <label for="name">Họ Tên</label>
+        <input type="text" name="name" id="name" required><br><br>
+
+        <label for="email">Email</label>
+        <input type="text" name="email" id="email" required><br><br>
+
+        <label for="password">Mật khẩu</label>
+        <input type="password" name="password" id="password" required><br><br>
+
+        <label for="">Giới tính</label>
+        <input type="radio" name="gender" id="male" value="male" required>
+        <label for="male">Nam</label>
+        <input type="radio" name="gender" id="female" value="female" required>
+        <label for="female">Nữ</label><br><br>
+
+        <label for="">Sở thích</label>
+        <input type="checkbox" id="reading" name="hobbies" value="reading">
+        <label for="reading">Đọc sách</label>
+        <input type="checkbox" id="travel" name="hobbies" value="travel">
+        <label for="travel">Du lịch</label><br><br>
+
+        <input type="submit" value="Gửi">
+    </form>
+</body>
+</html>

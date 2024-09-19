@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+			integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
+		<title>Bài tập 4</title>
+		<style>
+			.container {
+				display: flex;
+				justify-content: space-between;
+				background: #fff2cd;
+				border: 1px solid #cfba7f;
+				align-items: center;
+				padding: 4px 20px;
+			}
+
+			.menu {
+				display: flex;
+				align-items: center;
+			}
+
+			.sub-menu {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				margin: 0px 16px;
+			}
+
+			.profile {
+				display: flex;
+				align-items: center;
+			}
+
+			.others {
+				display: flex;
+				align-items: center;
+			}
+
+			.notification {
+				margin-right: 30px;
+			}
+
+			.avatar {
+				width: 40px;
+				height: 40px;
+				background: #d5e8d4;
+				border-radius: 50%;
+				border: 1px solid #a6c594;
+			}
+
+			p {
+				margin-left: 8px;
+			}
+
+			.sub-menu i {
+				margin-bottom: 6px;
+			}
+
+			i {
+				font-size: 20px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<div class="avatar"></div>
+			<div class="menu">
+				<div class="sub-menu"><i class="fa-solid fa-house"></i>Home</div>
+				<div class="sub-menu"><i class="fa-solid fa-user"></i>Friends</div>
+				<div class="sub-menu"><i class="fa-solid fa-shop"></i>Market</div>
+			</div>
+			<div class="others">
+				<div class="notification">
+					<i class="fa-solid fa-bell"></i>
+				</div>
+				<div class="profile">
+					<div class="avatar"></div>
+					<p>Your name</p>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

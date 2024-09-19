@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Layout</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Thiết lập chung cho các box */
+        .container {
+            display: flex;
+            justify-content: space-around;
+            padding: 20px;
+        }
+
+        .box {
+            width: 100px;
+            height: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: bold;
+            color: white;
+            font-size: 16px;
+        }
+
+/* Màu sắc cho các box */
+        .red {
+            background-color: red;
+        }
+
+        .blue {
+            background-color: blue;
+        }
+
+        .yellow {
+            background-color: yellow;
+        }
+
+        /* Giao diện cho desktop */
+        @media (min-width: 768px) {
+            .container {
+                flex-direction: row;
+            }
+        }
+
+        /* Giao diện cho mobile */
+        @media (max-width: 767px) {
+            .container {
+                flex-direction: row-reverse; /* Đảo ngược thứ tự */
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box red">Đỏ</div>
+        <div class="box blue">Xanh</div>
+        <div class="box yellow">Vàng</div>
+    </div>
+</body>
+</html>
